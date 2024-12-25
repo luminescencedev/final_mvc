@@ -41,4 +41,33 @@ class MainController extends CoreController
         // Affiche la vue dans le dossier views
         $this->show('mentions');
     }
+
+    /**
+     * Show cart page
+     */ 
+    public function cart()
+    {
+        $productModel = new Product();
+        $products = $productModel->findAll();
+
+        // Convert Product objects to arrays
+        $productsArray = array_map(function($product) {
+            return [
+                'id' => $product->getId(),
+                'name' => $product->getName(),
+                'description' => $product->getDescription(),
+                'picture' => $product->getPicture(),
+                'price' => $product->getPrice(),
+                'status' => $product->getStatus(),
+                'brand_id' => $product->getBrand_id(),
+                'category_id' => $product->getCategory_id(),
+                'type_id' => $product->getType_id(),
+                'rate' => $product->getRate()
+            ];
+        }, $products);
+
+        $this->show('cart', [
+            'products' => $productsArray
+        ]);
+    }
 }

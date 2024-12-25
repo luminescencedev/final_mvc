@@ -45,7 +45,11 @@ $router->addRoutes(array(
     array('GET','/test', [
         'controller' => MainController::class,
         'action' => 'test'
-    ])
+    ]),
+    array('GET','/cart', [
+        'controller' => MainController::class,
+        'action' => 'cart'
+    ] , 'cart'),
   ));
 
 // Ici on check si la route sur laquelle on est a bien été mappé

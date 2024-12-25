@@ -73,6 +73,9 @@
                 </div>
               </div>
             </li>
+            <li class="nav-item">
+              <a href="<?= $router->generate('cart') ?>" class="nav-link">Cart</a>
+            </li>
           </ul>
         </div>
       </div>

@@ -15,6 +15,7 @@ class Product extends CoreModel
     private $brand_id;
     private $category_id;
     private $type_id;
+    private $rate;
 
     /**
      * Récupère toutes les catégories (table category) depuis la bdd
@@ -252,6 +253,23 @@ class Product extends CoreModel
     {
         $this->type_id = $type_id;
     }
+
+    public function getRate()
+    {
+        return $this->rate;
+    }
+    
+
+    /**
+     * Set the value of rate
+     *
+     * @return  self
+     */
+    public function setRate($rate)
+    {
+        $this->rate = $rate;
+    }
+
 
 
 
