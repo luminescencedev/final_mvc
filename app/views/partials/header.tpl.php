@@ -74,7 +74,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a href="<?= $router->generate('cart') ?>" class="nav-link">Cart</a>
+              <a href="<?= $router->generate('cart') ?>" class="nav-link">Panier</a>
             </li>
           </ul>
         </div>

@@ -32,8 +32,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">oShop</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div class="font-weight-bold text-uppercase text-lg text-dark mb-3">LevelUp</div>
+            <p>Découvrez nos produits de qualité et profitez de nos offres exceptionnelles.</p>
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a href="#" target="_blank" title="twitter" class="text-muted text-hover-primary">
@@ -69,7 +69,7 @@
           </div>
           <div class="col-lg-6">
             <h6 class="text-uppercase text-dark mb-3">Recevez nos offres promotionnelles</h6>
-            <p class="mb-3"> Lorem ipsum dolor sit amet, at itaque temporibus.</p>
+            <p class="mb-3">Inscrivez-vous à notre newsletter pour recevoir nos dernières offres et promotions.</p>
             <form action="#" id="newsletter-form">
               <div class="input-group mb-3">
                 <input type="email" placeholder="Votre adresse email" class="form-control bg-transparent border-secondary border-right-0">
@@ -87,22 +87,22 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-3 text-center text-md-left">
-            <p class="mb-md-0">Tous droits réservés<br>© 2020 oShop</p>
+            <p class="mb-md-0">Tous droits réservés<br>© 2024 LevelUp</p>
           </div>
           <div class="col-md-6 text-center">
-            <p class="mb-md-0"><a class="text-white" href="#">Mentions légales</a><br><a class="text-white" href="#">Conditions générales de vente</a></p>
+            <p class="mb-md-0"><a class="text-white" href="<?=$router->generate('legal-mentions')?>">Mentions légales</a><br><a class="text-white" href="#">Conditions générales de vente</a></p>
           </div>
          
           <div class="col-md-3">
             <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
               <li class="list-inline-item">
-                <img src="assets/images/visa.svg" alt="..." class="payment-icon">
+                <img src="<?=$absoluteURL.'/assets/images/visa.svg'?>" alt="..." class="payment-icon">
               </li>
               <li class="list-inline-item">
-                <img src="assets/images/mastercard.svg" alt="..." class="payment-icon">
+                <img src="<?=$absoluteURL.'/assets/images/mastercard.svg'?>" alt="..." class="payment-icon">
               </li>
               <li class="list-inline-item">
-                <img src="assets/images/paypal.svg" alt="..." class="payment-icon">
+                <img src="<?=$absoluteURL.'/assets/images/paypal.svg'?>" alt="..." class="payment-icon">
               </li>
             </ul>
           </div>

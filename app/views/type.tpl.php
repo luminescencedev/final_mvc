@@ -11,8 +11,7 @@
         <h1 class="hero-heading"><?=$viewData['type']->getName()?></h1>
         <div class="row">
           <div class="col-xl-8 offset-xl-2">
-            <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt.</p>
+            <p class="lead text-muted">Découvrez notre sélection de produits de la catégorie <?=$viewData['type']->getName()?>. Profitez de nos offres exceptionnelles et trouvez les articles qui vous conviennent.</p>
           </div>
         </div>
       </div>
@@ -49,12 +48,12 @@
             </a>
           </div>
           <div class="product-action-buttons">
-            <a href="#" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a>
+            <a onclick="toCart(<?=$product->getId()?>)" class="btn btn-outline-dark btn-product-left"><i class="fa fa-shopping-cart"></i></a>
             <a href="<?=$router->generate('catalog-product', ['id' => $product->getId()])?>" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
           </div>
           <div class="py-2">
-            <p class="text-muted text-sm mb-1">
-                
+          <p class="text-muted text-sm mb-1">
+              <?=$viewData['type']->getName()?>
             </p>
             <h3 class="h6 text-uppercase mb-1">
                 <a href="<?= htmlspecialchars($router->generate('catalog-product', ['id' => $product->getId()])) ?>" class="text-dark">
